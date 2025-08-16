@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Propuesta – MenosClick</title>
+  <style>
+    :root { --primary:#111; --muted:#6b7280; --card:#f7f7f8; --radius:16px; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:#111; }
+    .wrap { max-width: 1024px; margin: 0 auto; padding: 24px; }
+    .hero { display:grid; grid-template-columns: 1.1fr 0.9fr; gap:24px; align-items:center; }
+    .title { font-size: clamp(28px, 4vw, 42px); line-height:1.1; margin:0; }
+    .muted { color: var(--muted); }
+    .chip { display:inline-flex; gap:8px; align-items:center; background:#f2f3f5; border-radius:999px; padding:6px 10px; font-size: 13px; }
+    .btns { display:flex; gap:12px; flex-wrap:wrap; margin-top:16px; }
+    .btn { padding:12px 16px; border-radius: var(--radius); text-decoration:none; display:inline-block; }
+    .btn.primary { background: var(--primary); color:white; }
+    .btn.ghost { border:1px solid #ddd; color:#111; }
+    .card { background: var(--card); border-radius: var(--radius); padding: 18px; }
+    section { padding: 28px 0; }
+    h2 { font-size: 24px; margin: 0 0 8px; }
+    h3 { font-size: 18px; margin: 0 0 6px; }
+    ul { margin: 8px 0 0 18px; }
+    .grid-3 { display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
+    .grid-2 { display:grid; grid-template-columns: repeat(2,1fr); gap:16px; }
+    .plan { background:white; border:1px solid #eee; border-radius: var(--radius); padding:18px; }
+    .price { font-size: 26px; font-weight:700; }
+    .logo { width:56px; height:56px; border-radius:12px; object-fit:cover; background:#fff; border:1px solid #eee; }
+    .hidden { display:none; }
+    @media (max-width: 840px) { .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+    @media print { .btns { display:none } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <h1 class="title">Que más personas te encuentren y te compren</h1>
+        <div style="display:flex; align-items:center; gap:12px; margin-top:8px;">
+          <img id="brandLogo" class="logo hidden" alt="logo" />
+          <div class="chip">Propuesta para <b id="brandName">Tu Negocio</b></div>
+        </div>
+        <p class="muted" style="margin-top:6px">100% remoto · Mes a mes · Sin tecnicismos</p>
+        <div class="btns">
+          <a class="btn primary" href="#planes">Ver planes</a>
+          <a class="btn ghost" href="#como">Cómo funciona</a>
+        </div>
+      </div>
+      <div class="card">
+        <ul>
+          <li>Publicamos videos y fotos cada semana en Instagram, Facebook y TikTok.</li>
+          <li>Respondemos mensajes básicos: horarios, cómo llegar y enlace de pedidos.</li>
+          <li>Pedimos reseñas y destacamos los mejores comentarios.</li>
+          <li>Promos simples para días y horas tranquilas.</li>
+          <li>Medimos resultados y repetimos lo que mejor funciona.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="como">
+      <h2>Cómo funciona</h2>
+      <div class="grid-3" style="margin-top:12px;">
+        <div class="card">
+          <h3>1) Ustedes graban</h3>
+          <p>Con el móvil, clips cortos de 5–10 segundos (10–20 min/semana) o nos mandan fotos que ya tienen.</p>
+        </div>
+        <div class="card">
+          <h3>2) Nosotros hacemos el resto</h3>
+          <p>Editamos, escribimos el texto y publicamos en sus cuentas. Si quieren anuncios, ustedes ponen el presupuesto; nosotros indicamos dónde conviene.</p>
+        </div>
+        <div class="card">
+          <h3>3) Reporte sencillo</h3>
+          <p>Cada semana enviamos un resumen con lo que funcionó mejor y el plan de la semana siguiente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes">
+      <h2>Planes y precios (USD)</h2>
+      <div class="grid-2" style="margin-top:12px;">
+        <div class="plan">
+          <h3>Plan Básico</h3>
+          <p>1 video/semana (4/mes), 8–12 historias/mes, 2 posts/mes, respuesta básica a mensajes, guía para grabar, botón en la bio con enlaces importantes y reporte mensual sencillo.</p>
+          <div class="price">$573<span class="muted"> / mes</span></div>
+          <p class="muted">Anuncios y herramientas por cuenta del cliente.</p>
+        </div>
+        <div class="plan">
+          <h3>Plan Crecimiento Local</h3>
+          <p>2 videos/semana (8/mes), 16–24 historias/mes, 4 posts/mes, ideas de promos para horas tranquilas, respuesta a mensajes y reseñas, calendario por fechas especiales y reporte semanal de 1 página.</p>
+          <div class="price">$851<span class="muted"> / mes</span></div>
+          <p class="muted">Anuncios y herramientas por cuenta del cliente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Qué necesitamos</h2>
+      <ul>
+        <li>Acceso a Instagram, Facebook y TikTok.</li>
+        <li>Enlace del menú o pedidos en línea (si aplica).</li>
+        <li>Horario por local y un WhatsApp de contacto.</li>
+        <li>Una persona para enviar clips/fotos y aprobar publicaciones cuando haga falta.</li>
+      </ul>
+    </section>
+
+    <section style="background:#111; color:#fff; border-radius:16px; padding:20px;">
+      <h2>¿Empezamos esta semana?</h2>
+      <p style="color:#d1d5db">Sin contrato. 100% remoto. Pagas por mes y puedes pausar cuando quieras.</p>
+      <div class="btns">
+        <a id="ctaStart" class="btn" style="background:#fff; color:#000" href="#">Quiero empezar</a>
+        <a id="ctaCall" class="btn ghost" style="border-color:#fff; color:#fff" href="#">Agendar llamada</a>
+      </div>
+    </section>
+
+    <footer style="color:#6b7280; text-align:center; padding:20px 0 40px;">
+      MenosClick.AI · Propuesta para <span id="brandNameFooter">Tu Negocio</span>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const q = new URLSearchParams(window.location.search);
+      const brand = q.get('name') || 'Tu Negocio';
+      const logo = q.get('logo');
+      const primary = q.get('primary');
+      const cta = q.get('cta') || '#planes';
+      const call = q.get('call') || '#';
+      document.getElementById('brandName').textContent = brand;
+      document.getElementById('brandNameFooter').textContent = brand;
+      if (logo) { const img = document.getElementById('brandLogo'); img.src = logo; img.classList.remove('hidden'); }
+      if (primary) { document.documentElement.style.setProperty('--primary', primary); }
+      document.getElementById('ctaStart').href = cta;
+      document.getElementById('ctaCall').href = call;
+    })();
+  </script>
+</body>
+</html>
